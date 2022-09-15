@@ -1,0 +1,156 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <link rel="stylesheet" href="./bundles/main.min.css"/>
+    <meta charset="UTF-8"/>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+    <link rel="icon" type="image/x-icon" href="./images/favicon.png"/>
+    <title>Privacy Policy</title>
+  </head>
+  <body id="app">
+        <header class="header" id="header">
+          <div class="container">
+            <div class="wrapper header__wrapper"> 
+              <div class="header__burger" @click="mobileNav = true"> 
+                <div class="header__line" style="width:12.5px;margin-right:7.5px;"> </div>
+                <div class="header__line"></div>
+                <div class="header__line" style="width:7.5px;margin-right:12.5px;"> </div>
+              </div><a class="header__logo" href="index.html"> <picture><source srcset="./images/logo.webp" type="image/webp"><img src="./images/logo.png" alt="Logo" loading="lazy"></picture></a>
+              <div class="header__navigation"> <a class="header__link" href="index.html">
+                  <div class="header__text">Home</div></a><a class="header__link" href="terms.html">
+                  <div class="header__text">Terms and Conditions</div></a><a class="header__link header__link_active" href="privacy.html">
+                  <div class="header__text">Privacy Policy</div></a></div>
+              <div class="header__fake"></div>
+            </div>
+          </div>
+        </header>
+        <transition name="mobNav">
+          <div class="mob-nav" ref="mobNav" v-show="mobileNav" @click="mobileNav = false">
+            <div class="mob-nav__content" @click.stop>
+              <div class="mob-nav__close" @click="mobileNav = false"><svg width="13" height="13" viewBox="0 0 13 13" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M0.146631 1.35536C0.100144 1.30888 0.0632674 1.25369 0.0381083 1.19295C0.0129493 1.13221 4.8983e-10 1.06711 0 1.00136C-4.8983e-10 0.93562 0.0129493 0.87052 0.0381083 0.809781C0.0632674 0.749041 0.100144 0.693852 0.146631 0.647364C0.193119 0.600876 0.248309 0.564 0.309048 0.538841C0.369788 0.513682 0.434888 0.500732 0.500632 0.500732C0.566375 0.500732 0.631476 0.513682 0.692215 0.538841C0.752954 0.564 0.808144 0.600876 0.854632 0.647364L6.00063 5.79436L11.1466 0.647364C11.1931 0.600876 11.2483 0.564 11.309 0.538841C11.3698 0.513682 11.4349 0.500732 11.5006 0.500732C11.5664 0.500732 11.6315 0.513682 11.6922 0.538841C11.753 0.564 11.8081 0.600876 11.8546 0.647364C11.9011 0.693852 11.938 0.749041 11.9632 0.809781C11.9883 0.87052 12.0013 0.93562 12.0013 1.00136C12.0013 1.06711 11.9883 1.13221 11.9632 1.19295C11.938 1.25369 11.9011 1.30888 11.8546 1.35536L6.70763 6.50136L11.8546 11.6474C11.9011 11.6939 11.938 11.749 11.9632 11.8098C11.9883 11.8705 12.0013 11.9356 12.0013 12.0014C12.0013 12.0671 11.9883 12.1322 11.9632 12.1929C11.938 12.2537 11.9011 12.3089 11.8546 12.3554C11.8081 12.4019 11.753 12.4387 11.6922 12.4639C11.6315 12.489 11.5664 12.502 11.5006 12.502C11.4349 12.502 11.3698 12.489 11.309 12.4639C11.2483 12.4387 11.1931 12.4019 11.1466 12.3554L6.00063 7.20836L0.854632 12.3554C0.808144 12.4019 0.752954 12.4387 0.692215 12.4639C0.631476 12.489 0.566375 12.502 0.500632 12.502C0.434888 12.502 0.369788 12.489 0.309048 12.4639C0.248309 12.4387 0.193119 12.4019 0.146631 12.3554C0.100144 12.3089 0.0632674 12.2537 0.0381083 12.1929C0.0129493 12.1322 0 12.0671 0 12.0014C0 11.9356 0.0129493 11.8705 0.0381083 11.8098C0.0632674 11.749 0.100144 11.6939 0.146631 11.6474L5.29363 6.50136L0.146631 1.35536Z" fill="#303030"/>
+</svg>
+              </div>
+              <div class="mob-nav__logo"> <picture><source srcset="./images/logo.webp" type="image/webp"><img src="./images/logo.png" alt=""></picture></div>
+              <div class="mob-nav__nav"> <a class="mob-nav__link" href="index.html"> 
+                  <div class="mob-nav__bg"></div>
+                  <div class="mob-nav__text">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<path d="M23.4 10.6271C23.3993 10.6265 23.3988 10.6258 23.3982 10.6252L13.6081 0.835481C13.1908 0.418 12.636 0.188202 12.0458 0.188202C11.4557 0.188202 10.9009 0.418 10.4834 0.835481L0.69839 10.6203C0.695094 10.6236 0.691615 10.6271 0.688502 10.6304C-0.168433 11.4922 -0.166968 12.8906 0.692714 13.7503C1.08548 14.1432 1.60403 14.3707 2.15866 14.3947C2.18136 14.3968 2.20407 14.3979 2.22696 14.3979H2.61697V21.6024C2.61697 23.0283 3.77713 24.1883 5.20298 24.1883H9.03318C9.42155 24.1883 9.73631 23.8733 9.73631 23.4851V17.8367C9.73631 17.1861 10.2657 16.6569 10.9162 16.6569H13.1754C13.826 16.6569 14.3552 17.1861 14.3552 17.8367V23.4851C14.3552 23.8733 14.6699 24.1883 15.0583 24.1883H18.8885C20.3145 24.1883 21.4745 23.0283 21.4745 21.6024V14.3979H21.8363C22.4263 14.3979 22.9811 14.1681 23.3988 13.7505C24.2593 12.8895 24.2597 11.4886 23.4 10.6271ZM22.4043 12.7562C22.2525 12.908 22.0507 12.9917 21.8363 12.9917H20.7714C20.383 12.9917 20.0682 13.3065 20.0682 13.6948V21.6024C20.0682 22.2528 19.5391 22.782 18.8885 22.782H15.7614V17.8367C15.7614 16.4108 14.6014 15.2507 13.1754 15.2507H10.9162C9.49022 15.2507 8.33006 16.4108 8.33006 17.8367V22.782H5.20298C4.55259 22.782 4.02323 22.2528 4.02323 21.6024V13.6948C4.02323 13.3065 3.70847 12.9917 3.3201 12.9917H2.27347C2.26248 12.991 2.25168 12.9904 2.24051 12.9902C2.03103 12.9866 1.83456 12.9034 1.68734 12.756C1.37423 12.4429 1.37423 11.9333 1.68734 11.62C1.68753 11.62 1.68753 11.6199 1.68771 11.6197L1.68826 11.6191L11.478 1.82975C11.6296 1.67795 11.8312 1.59445 12.0458 1.59445C12.2602 1.59445 12.4618 1.67795 12.6136 1.82975L22.4012 11.6171C22.4027 11.6186 22.4043 11.62 22.4058 11.6215C22.7172 11.9352 22.7167 12.4437 22.4043 12.7562Z" fill="#3052F8"/>
+</svg>Home
+                  </div></a><a class="mob-nav__link" href="terms.html"> 
+                  <div class="mob-nav__bg"></div>
+                  <div class="mob-nav__text">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_14_895)">
+<path d="M20.9346 6.06595L15.3097 0.441093C15.1785 0.309749 14.9993 0.235077 14.8125 0.235077H4.96875C3.80564 0.235077 2.85938 1.18134 2.85938 2.34445V22.1257C2.85938 23.2888 3.80564 24.2351 4.96875 24.2351H19.0312C20.1944 24.2351 21.1406 23.2888 21.1406 22.1257V6.5632C21.1406 6.37148 21.0601 6.19144 20.9346 6.06595ZM15.5156 2.63569L18.74 5.86008H16.2188C15.831 5.86008 15.5156 5.54465 15.5156 5.15695V2.63569ZM19.0312 22.8288H4.96875C4.58105 22.8288 4.26562 22.5134 4.26562 22.1257V2.34445C4.26562 1.95675 4.58105 1.64133 4.96875 1.64133H14.1094V5.15695C14.1094 6.32006 15.0556 7.26633 16.2188 7.26633H19.7344V22.1257C19.7344 22.5134 19.419 22.8288 19.0312 22.8288Z" fill="#3052F8"/>
+<path d="M16.2188 10.1726H7.78125C7.39294 10.1726 7.07812 10.4874 7.07812 10.8757C7.07812 11.264 7.39294 11.5788 7.78125 11.5788H16.2188C16.6071 11.5788 16.9219 11.264 16.9219 10.8757C16.9219 10.4874 16.6071 10.1726 16.2188 10.1726Z" fill="#3052F8"/>
+<path d="M16.2188 12.9851H7.78125C7.39294 12.9851 7.07812 13.2999 7.07812 13.6882C7.07812 14.0765 7.39294 14.3913 7.78125 14.3913H16.2188C16.6071 14.3913 16.9219 14.0765 16.9219 13.6882C16.9219 13.2999 16.6071 12.9851 16.2188 12.9851Z" fill="#3052F8"/>
+<path d="M16.2188 15.7976H7.78125C7.39294 15.7976 7.07812 16.1124 7.07812 16.5007C7.07812 16.889 7.39294 17.2038 7.78125 17.2038H16.2188C16.6071 17.2038 16.9219 16.889 16.9219 16.5007C16.9219 16.1124 16.6071 15.7976 16.2188 15.7976Z" fill="#3052F8"/>
+<path d="M13.4062 18.6101H7.78125C7.39294 18.6101 7.07812 18.9249 7.07812 19.3132C7.07812 19.7015 7.39294 20.0163 7.78125 20.0163H13.4062C13.7946 20.0163 14.1094 19.7015 14.1094 19.3132C14.1094 18.9249 13.7946 18.6101 13.4062 18.6101Z" fill="#3052F8"/>
+</g>
+<defs>
+<clipPath id="clip0_14_895">
+<rect width="24" height="24" fill="white" transform="translate(0 0.235077)"/>
+</clipPath>
+</defs>
+</svg>Terms and Conditions
+                  </div></a><a class="mob-nav__link" href="privacy.html"> 
+                  <div class="mob-nav__bg"></div>
+                  <div class="mob-nav__text">
+                    <svg width="24" height="25" viewBox="0 0 24 25" fill="none" xmlns="http://www.w3.org/2000/svg">
+<g clip-path="url(#clip0_14_902)">
+<path d="M22.1834 3.82393C18.691 3.82393 14.096 2.64547 12.4581 0.462125C12.2402 0.196806 11.8485 0.158537 11.5832 0.376432C11.5519 0.402067 11.5232 0.430814 11.4975 0.462125C9.85948 2.64529 5.26446 3.82393 1.77228 3.82393C1.44067 3.82393 1.17188 4.09273 1.17188 4.42433V12.2285C1.17188 18.8298 6.90434 22.8094 11.813 24.2116C11.9207 24.2429 12.0349 24.2429 12.1426 24.2116C17.0513 22.8094 22.7838 18.8298 22.7838 12.2285V4.42433C22.7838 4.09273 22.515 3.82393 22.1834 3.82393ZM21.583 12.2285C21.583 18.0887 16.4474 21.6812 11.9778 23.0099C7.50822 21.6812 2.37249 18.0887 2.37249 12.2285V5.01412C5.84252 4.89675 9.9459 3.77816 11.9778 1.73452C14.0099 3.77816 18.1131 4.89675 21.5831 5.01393V12.2285H21.583Z" fill="#3052F8"/>
+<path d="M9.57666 9.82722V11.0278H8.97626C8.64465 11.0278 8.37585 11.2966 8.37585 11.6282V16.4307C8.37585 16.7623 8.64465 17.0311 8.97626 17.0311H14.9795C15.3111 17.0311 15.5799 16.7623 15.5799 16.4307V11.6282C15.5799 11.2966 15.3111 11.0278 14.9795 11.0278H14.3791V9.82722C14.3791 8.50099 13.3041 7.42598 11.9779 7.42598C10.6517 7.42598 9.57666 8.50099 9.57666 9.82722ZM14.3791 15.8305H9.57666V12.2285H14.3791V15.8305ZM13.1785 9.82722V11.0278H10.7773V9.82722C10.7773 9.1642 11.3147 8.6266 11.9779 8.6266C12.6409 8.6266 13.1785 9.1642 13.1785 9.82722Z" fill="#3052F8"/>
+</g>
+<defs>
+<clipPath id="clip0_14_902">
+<rect width="24" height="24" fill="white" transform="translate(0 0.235077)"/>
+</clipPath>
+</defs>
+</svg>Privacy Policy
+                  </div></a></div>
+            </div>
+          </div>
+        </transition>
+    <main>
+      <div class="headline-wrap">
+        <div class="container">
+          <h1 class="h1">Privacy Policy</h1>
+        </div>
+      </div>
+      <div class="text-wrap"> 
+        <div class="container"> 
+          <p class="paragraph">At slotopro, accessible from https://slotopro.com, one of our main priorities is the privacy of our visitors. This Privacy Policy document contains types of information that is collected and recorded by slotopro and how we use it.</p>
+          <p class="paragraph">If you have additional questions or require more information about our Privacy Policy, do not hesitate to contact us.</p>
+          <p class="paragraph">This Privacy Policy applies only to our online activities and is valid for visitors to our website with regards to the information that they shared and/or collect in slotopro. This policy is not applicable to any information collected offline or via channels other than this website.</p>
+          <h3 class="h3">Consent</h3>
+          <p class="paragraph">By using our website, you hereby consent to our Privacy Policy and agree to its terms.</p>
+          <h3 class="h3">Information we collect</h3>
+          <p class="paragraph">The personal information that you are asked to provide, and the reasons why you are asked to provide it, will be made clear to you at the point we ask you to provide your personal information.</p>
+          <p class="paragraph">If you contact us directly, we may receive additional information about you such as your name, email address, phone number, the contents of the message and/or attachments you may send us, and any other information you may choose to provide.</p>
+          <p class="paragraph">When you register for an Account, we may ask for your contact information, including items such as name, company name, address, email address, and telephone number.</p>
+          <p class="paragraph">How we use your information</p>
+          <p class="paragraph">We use the information we collect in various ways, including to:</p>
+          <ul class="list">
+            <li>Provide, operate, and maintain our website</li>
+            <li>Improve, personalize, and expand our website</li>
+            <li>Understand and analyze how you use our website</li>
+            <li>Develop new products, services, features, and functionality</li>
+            <li>Communicate with you, either directly or through one of our partners, including for customer service, to provide you with updates and other information relating to the website, and for marketing and promotional purposes</li>
+            <li>Send you emails</li>
+            <li>Find and prevent fraud</li>
+          </ul>
+          <h3 class="h3">Log Files</h3>
+          <p class="paragraph">Slotopro follows a standard procedure of using log files. These files log visitors when they visit websites. All hosting companies do this and a part of hosting services’ analytics. The information collected by log files include internet protocol (IP) addresses, browser type, Internet Service Provider (ISP), date and time stamp, referring/exit pages, and possibly the number of clicks. These are not linked to any information that is personally identifiable. The purpose of the information is for analyzing trends, administering the site, tracking users’ movement on the website, and gathering demographic information.</p>
+          <h3 class="h3">Advertising Partners Privacy Policies</h3>
+          <p class="paragraph">You may consult this list to find the Privacy Policy for each of the advertising partners of slotopro.</p>
+          <p class="paragraph">Third-party ad servers or ad networks uses technologies like cookies, JavaScript, or Web Beacons that are used in their respective advertisements and links that appear on slotopro, which are sent directly to users’ browser. They automatically receive your IP address when this occurs. These technologies are used to measure the effectiveness of their advertising campaigns and/or to personalize the advertising content that you see on websites that you visit.</p>
+          <p class="paragraph">Note that slotopro has no access to or control over these cookies that are used by third-party advertisers.</p>
+          <h3 class="h3">Third Party Privacy Policies</h3>
+          <p class="paragraph">Slotopro’s Privacy Policy does not apply to other advertisers or websites. Thus, we are advising you to consult the respective Privacy Policies of these third-party ad servers for more detailed information. It may include their practices and instructions about how to opt-out of certain options.</p>
+          <p class="paragraph">You can choose to disable cookies through your individual browser options. To know more detailed information about cookie management with specific web browsers, it can be found at the browsers’ respective websites.</p>
+          <h3 class="h3">CCPA Privacy Rights (Do Not Sell My Personal Information)</h3>
+          <p class="paragraph">Under the CCPA, among other rights, California consumers have the right to:</p>
+          <ul class="list">
+            <li>Request that a business that collects a consumer’s personal data disclose the categories and specific pieces of personal data that a business has collected about consumers.</li>
+            <li>Request that a business delete any personal data about the consumer that a business has collected.</li>
+            <li>Request that a business that sells a consumer’s personal data, not sell the consumer’s personal data.</li>
+          </ul>
+          <p class="paragraph">If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+          <h3 class="h3">GDPR Data Protection Rights</h3>
+          <p class="paragraph">We would like to make sure you are fully aware of all of your data protection rights. Every user is entitled to the following:</p>
+          <ul class="list">
+            <li>The right to access – You have the right to request copies of your personal data. We may charge you a small fee for this service.</li>
+            <li>The right to rectification – You have the right to request that we correct any information you believe is inaccurate. You also have the right to request that we complete the information you believe is incomplete.</li>
+            <li>The right to erasure – You have the right to request that we erase your personal data, under certain conditions.</li>
+            <li>The right to restrict processing – You have the right to request that we restrict the processing of your personal data, under certain conditions.</li>
+            <li>The right to object to processing – You have the right to object to our processing of your personal data, under certain conditions.</li>
+            <li>The right to data portability – You have the right to request that we transfer the data that we have collected to another organization, or directly to you, under certain conditions.</li>
+          </ul>
+          <p class="paragraph">If you make a request, we have one month to respond to you. If you would like to exercise any of these rights, please contact us.</p>
+          <h3 class="h3">Children’s Information</h3>
+          <p class="paragraph">Another part of our priority is adding protection for children while using the internet. We encourage parents and guardians to observe, participate in, and/or monitor and guide their online activity.</p>
+          <p class="paragraph">slotopro does not knowingly collect any Personal Identifiable Information from children under the age of 13. If you think that your child provided this kind of information on our website, we strongly encourage you to contact us immediately and we will do our best efforts to promptly remove such information from our records</p>
+        </div>
+      </div>
+    </main>
+        <footer class="footer">
+          <div class="container container_small"> 
+            <div class="wrapper footer__wrapper"> <a class="footer__logo" href="index.html"><picture><source srcset="./images/logo-w.webp" type="image/webp"><img src="./images/logo-w.png" alt=""></picture></a>
+              <p class="paragraph">Best Social Online Casino gives you the opportunity to play social casino games for free to play. With Slotopro Social Casino no real money can be used or won. Slotopro Social Casino Online is free for all users. Our Best Online Casino are intended for an ADULT audience aged 18 and over. Playing in the Slotopro Online Casino brings No future luck on real casino websites.</p>
+            </div>
+          </div>
+          <div class="footer__copyright"> 
+            <div class="container container_small">
+              <p class="paragraph">Copyright 2022 © slotopro.com</p>
+            </div>
+          </div>
+        </footer>
+    <script src="./vendor/vue/vue.min.js"></script>
+    <script src="./bundles/app.min.js"></script><link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <!-- Inter--><link href="https://fonts.googleapis.com/css2?family=Inter:wght@400;500;600;700&display=swap" rel="stylesheet">
+  </body>
+</html>
